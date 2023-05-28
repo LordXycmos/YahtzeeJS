@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yahtzee</title>
+  </head>
+  <body>
+    <h1 class="main-title">Yahtzee!</h1>
+    <div class="top-section">
+      <div class="dice-row">
+        <img src="dice/die-1.png" class="dice-1" />
+        <img src="dice/die-1.png" class="dice-2" />
+        <img src="dice/die-1.png" class="dice-3" />
+      </div>
+      <div class="dice-row">
+        <img src="dice/die-1.png" class="dice-4" />
+        <img src="dice/die-1.png" class="dice-5" />
+      </div>
+      <div class="buttons">
+        <button class="roll-btn">ROLL</button>
+        <button class="new-btn">NEW</button>
+        <button class="reroll-btn">REROLL</button>
+        <p class="rolls-left">0</p>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div><strong>top half</strong></div>
+      <div></div>
+      <div></div>
+      <div class="column-1">ones</div>
+      <div class="column-2">count <br /><strong>ones</strong></div>
+      <div id="ones" class="column-3"></div>
+      <div class="column-4">twos</div>
+      <div class="column-5">count <br /><strong>twos</strong></div>
+      <div id="twos" class="column-6"></div>
+      <div class="column-1">threes</div>
+      <div class="column-2">count <br /><strong>threes</strong></div>
+      <div id="threes" class="column-3"></div>
+      <div class="column-4">fours</div>
+      <div class="column-5">count <br /><strong>fours</strong></div>
+      <div id="fours" class="column-6"></div>
+      <div class="column-1">fives</div>
+      <div class="column-2">count <br /><strong>fives</strong></div>
+      <div id="fives" class="column-3"></div>
+      <div class="column-4">sixes</div>
+      <div class="column-5">count <br /><strong>sixes</strong></div>
+      <div id="sixes" class="column-6"></div>
+      <div class="column-1">total points</div>
+      <div class="column-2">count<br /><strong>total points</strong></div>
+      <div id="top-total-1" class="column-3">0</div>
+      <div class="column-4">bonus<br />63+ points</div>
+      <div class="column-5">add <br /><strong>35</strong></div>
+      <div id="bonus" class="column-6">0</div>
+      <div class="column-1">total<br />top half</div>
+      <div class="column-2">count<br /><strong>new total</strong></div>
+      <div id="top-total-2" class="column-3">0</div>
+      <!-- Second half -->
+      <div><strong>bottom half</strong></div>
+      <div></div>
+      <div></div>
+      <div class="column-1">three of a kind</div>
+      <div class="column-2">count <br /><strong>all dice</strong></div>
+      <div id="toak" class="column-3"></div>
+      <div class="column-4">four of a kind</div>
+      <div class="column-5">count <br /><strong>all dice</strong></div>
+      <div id="foak" class="column-6"></div>
+      <div class="column-1">full house</div>
+      <div class="column-2">add <br /><strong>25</strong></div>
+      <div id="fh" class="column-3"></div>
+      <div class="column-4">small straight</div>
+      <div class="column-5">add <br /><strong>30</strong></div>
+      <div id="ss" class="column-6"></div>
+      <div class="column-1">big straight</div>
+      <div class="column-2">add <br /><strong>40</strong></div>
+      <div id="bs" class="column-3"></div>
+      <div class="column-4">score</div>
+      <div class="column-5">add <br /><strong>50</strong></div>
+      <div id="score" class="column-6"></div>
+      <div class="column-1">chance</div>
+      <div class="column-2">count<br /><strong>all dice</strong></div>
+      <div id="chance" class="column-3"></div>
+      <div class="column-4">total<br />bottom half</div>
+      <div class="column-5">count <br /><strong>bottom half</strong></div>
+      <div id="bottom-total-bottom" class="column-6">0</div>
+      <div class="column-1">total<br />top half</div>
+      <div class="column-2">count <br /><strong>top half</strong></div>
+      <div id="bottom-total-top" class="column-3">0</div>
+      <div><strong>TOTAL</strong></div>
+      <div></div>
+      <div id="total">0</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
